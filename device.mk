@@ -24,7 +24,6 @@ $(call inherit-product, vendor/realme/bitra/bitra-vendor.mk)
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Audio
-TARGET_HAS_AUDIO_LVIMFS := true
 TARGET_USES_BLUETOOTH_LE_AUDIO := true
 
 PRODUCT_COPY_FILES += \
@@ -56,3 +55,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/realme/bitra
+
+# Remove Unwanted Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
