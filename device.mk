@@ -43,7 +43,6 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
-    OPlusExtrasResTarget \
     OPlusSettingsProviderResTarget \
     OPlusSystemUIResTarget
 #maintainer_overlay    
@@ -52,10 +51,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/realme/bitra
-
-# Remove Unwanted Packages
-PRODUCT_PACKAGES += \
-    RemovePackages
 
 # VNDK
 PRODUCT_COPY_FILES += \

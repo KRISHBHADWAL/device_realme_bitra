@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_bitra.mk
+    $(LOCAL_DIR)/lineage_bitra.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_bitra-user \
-    derp_bitra-userdebug \
-    derp_bitra-eng
+    lineage_bitra-user \
+    lineage_bitra-userdebug \
+    lineage_bitra-eng
