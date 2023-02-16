@@ -34,7 +34,7 @@ TARGET_ENABLE_BLUR := true
 
 # Extras
 TARGET_HAS_UDFPS := true
-
+TARGET_EXCLUDES_AUDIOFX := true
 # Inherit from device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
