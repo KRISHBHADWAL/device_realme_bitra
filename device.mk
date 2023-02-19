@@ -57,6 +57,12 @@ PRODUCT_PACKAGES += \
 #maintainer_overlay    
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
+#Rice_Dialer
+PRODUCT_PACKAGES += \
+Dialer
+#Rice_Contacts
+PRODUCT_PACKAGES += \
+Contacts
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/realme/bitra
