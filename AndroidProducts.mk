@@ -14,7 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_bitra.mk
+    $(LOCAL_DIR)/bootleg_bitra.mk
 
 COMMON_LUNCH_CHOICES := \
     bootleg_bitra-user \

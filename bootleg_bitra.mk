@@ -31,8 +31,10 @@ EXTRA_UDFPS_ANIMATIONS := true
 IS_PHONE := true
 
 # Maintainer Prop
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.bootleggers.maintainer=SonicKrish
+BOOTLEGGERS_BUILD_TYPE := Shishufied
 WITH_GAPPS := true
 # Blur properties
 TARGET_ENABLE_BLUR := true
