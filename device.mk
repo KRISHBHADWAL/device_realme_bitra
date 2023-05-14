@@ -41,6 +41,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.oplus.perf.rc
 
+# Init
+PRODUCT_PACKAGES += \
+    init.oplus.perf.rc
+
 # Overlays
 PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
