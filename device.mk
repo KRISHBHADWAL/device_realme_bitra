@@ -39,9 +39,7 @@ PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
     OPlusSettingsProviderResTarget \
     OPlusSystemUIResTarget
-#maintainer_overlay    
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    SettingsOverlayBitra \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     device/realme/bitra
