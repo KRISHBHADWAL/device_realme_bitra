@@ -17,19 +17,21 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-#Inherit Gapps
-$(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
-# Inherit some common CrDroid stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
+
+# Inherit some common PIXEL OS stuff
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_STOCK_ACORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 EXTRA_UDFPS_ANIMATIONS := true
 IS_PHONE := true
+# Screen density
+TARGET_SCREEN_DENSITY := 420
 # Blur properties
 TARGET_ENABLE_BLUR := true
 
@@ -40,7 +42,7 @@ TARGET_EXCLUDES_AUDIOFX := true
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_bitra
+PRODUCT_NAME := aosp_bitra
 PRODUCT_DEVICE := bitra
 PRODUCT_BRAND := Realme
 PRODUCT_MODEL := Realme GT Neo 2
